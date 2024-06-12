@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO USER!</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        :root{
+            --BGCOLOR:rgb(255, 255, 255);
+        }
+        body{
+            /* background-image:linear-gradient(to top,rgb(179, 0, 255),rgb(188, 66, 188),pink) */
+            background-image: url('/istockphoto-1270389718-612x612.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .outer{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+        }
+        button{
+            padding:1rem;
+            padding-left: 2rem;
+            padding-right:2rem;
+            margin:1rem;
+            margin-top:2rem;
+            margin-left:1.5rem;
+            border-radius:10px;
+
+        }
+        button:hover{
+            background:rgba(245, 245, 245, 0.511);
+
+        }
+        button:active{
+            background-color: rgba(245, 245, 245, 0.16);
+            border:2px solid rgba(245, 245, 245, 0);
+        }
+        h2{
+            font-size: 2rem;
+            font-family: cursive;
+            color:rgba(255, 255, 255, 0.55);
+        }
+        button{
+            transition: tranform 0.3s ease;
+        }
+        button:hover{
+                transform:scale(1.2);
+        }
+        .btnYes:hover{
+            background-color: greenyellow;
+        }
+        .btnNo:hover{
+            background-color: tomato;
+        }
+
+
+    </style>
+    <script defer>
+        const yes=()=>{
+            window.location.href="stone.html";
+        }
+        const not=()=>{
+            window.location.href="first_exit.html";
+        }       
+        
+    </script>
+</head>
+<body>
+    <main>
+        <article class="outer">
+            <section class="inner">
+                <h2>let's play stone,paper and rock ?</h2>
+                <button value="yes" onclick="yes()" class="btnYes">yes</button>
+                <button value="no intrested" onclick="not()" class="btnNo">not intrested</button>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
