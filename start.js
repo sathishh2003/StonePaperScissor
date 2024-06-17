@@ -1,11 +1,6 @@
 const stone = document.getElementById("stone");
-
-
-
 const paper = document.getElementById("paper");
-
 const sissor = document.getElementById("sissor");
-
 const h1 = document.querySelector("h1");
 const h2 = document.querySelector("h2");
 const exit = document.getElementById("exit");
@@ -13,11 +8,8 @@ const box = document.querySelector(".box");
 
 const history = document.getElementById("history");
 
-
-
 function work (){
-    
-    
+       
     stone.addEventListener("click",()=>{
        let computer = Math.floor(Math.random()*3);
        let playerchoice = "stone";
@@ -40,7 +32,6 @@ function work (){
        }
     })
 
-
     paper.addEventListener("click",()=>{
        let computer = Math.floor(Math.random()*3);
        let playerchoice = "paper";
@@ -62,8 +53,6 @@ function work (){
         h1.style.color = "green";  
       }
     })
-
-
 
     sissor.addEventListener("click",()=>{
        let computer = Math.floor(Math.random()*3);
