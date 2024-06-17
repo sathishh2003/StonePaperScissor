@@ -7,9 +7,7 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    min-height:100vh;
-    
-   
+    min-height:100vh;  
 }
 body{
     background-image: url('/card\ blue\ fire.jpg');
@@ -19,10 +17,10 @@ body{
 }
 .box{
     border:2px solid black;
-    padding:4rem;
-    
-    
-    
+    padding-top:4rem;    
+    padding-left:4rem;    
+    padding-right:4rem;    
+    padding-bottom:2rem;    
 }
 .inner{
     border:2px solid rgba(0, 0, 0, 0.415);
@@ -44,9 +42,13 @@ body{
     border:2px solid black;
     border-radius:10px;
     background-color: white;
-    text-transform: uppercase;
-    
-    
+    text-transform: uppercase;    
+}
+.choose{
+    margin-left: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 #stone:hover,#sissor:hover,#paper:hover,#exit:hover{
     background-color:lightslategrey;
